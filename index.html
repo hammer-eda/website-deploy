@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE-edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta name="author" content="Hammer developers" />
+		<title>About  - Hammer
+</title>
+		<link rel="stylesheet" type="text/css" href="./theme/css/style.min.css">
+		<link rel="stylesheet" type="text/css" href="./theme/font-awesome-4.7.0/css/font-awesome.min.css">
+		<script src="./theme/js/menu.js"></script>
+		<!-- Pending to improve -->
+	</head>
+	<body>
+		<nav class="navbar is-info" role="navigation" aria-label="main navigation">
+				<div class="navbar-brand">
+						<!-- Empty -->
+					<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+					</a>
+				</div>
+				<div id="navbarMain" class="navbar-menu">
+					<div class="navbar-start">
+					    <a class="navbar-item" href="././">
+							About Hammer
+						</a>
+					    <a class="navbar-item" href="././pages/publications.html">
+							Publications
+						</a>
+					    <a class="navbar-item" href="././pages/team.html">
+							Team
+						</a>
+					    <a class="navbar-item" href="././pages/development-philosophy.html">
+							Dev Philosophy
+						</a>
+						<a class="navbar-item" href="https://docs.hammer-eda.org/">
+							Docs
+						</a>
+						<a class="navbar-item" href="https://github.com/hammer-eda">
+							GitHub
+						</a>
+						<a class="navbar-item" href="https://twitter.com/hammer_eda">
+							Twitter
+						</a>
+					    <a class="navbar-item" href="././pages/user-forum.html">
+							User Forum
+						</a>
+						<div class="navbar-item has-dropdown is-hoverable">
+							<a class="navbar-link" href="/categories">
+Categories							</a>
+							<div class="navbar-dropdown">
+								<a class="navbar-item" href="/category/news.html">
+									News
+								</a>
+							</div>
+						</div>
+				</div>
+				<div class="navbar-end">
+					<div class="navbar-item">
+						<div class="buttons">
+						</div>
+					</div>
+				</div>
+			</div>
+			</nav>
+		<section class="section">
+			<div class="container">
+<article class="message is-info">
+	<div class="message-header">
+		About
+	</div>
+	<div class="message-body has-text-dark">
+		<h1>What is Hammer?</h1>
+<p>Taping out chips is a pain - let's fix that. Hammer tames the complexity of the EDA design process, EDA tools, and PDKs, in order to allow designers to easily accomplish common physical design tasks.</p>
+<p>Hammer has been used in <strong>over seven (7)</strong> chip projects in different technology nodes (from 28nm to 16nm), design architectures (embedded mixed-signal processors to multi-core RISC-V processors with high-speed serial links), and different EDA tools.</p>
+<p><br />
+<style>
+.hammerimgs img {
+  height: 200px
+}
+</style>
+<div class="hammerimgs">
+<img alt="Hammer Chip Implementation" src="./images/chip.png" />
+<img alt="Hammer Software Architecture" src="./images/architecture.svg" />
+<img alt="Floorplanning" src="./images/floorplan.png" />
+</div>
+<br /></p>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TiXeocDWdFA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h1>Getting Started</h1>
+<p>To get started with Hammer, you can find documentation and tutorials at <a href="http://docs.hammer-eda.org/">docs.hammer-eda.org</a>. The Hammer codebase is open-source and lives at <a href="https://github.com/ucb-bar/hammer">https://github.com/ucb-bar/hammer</a>.</p>
+<p>Join us at the <a href="/pages/user-forum.html">Hammer mailing list</a> if you have any questions or need help.</p>
+<h2>EDA CAD Plugins</h2>
+<p>UC Berkeley maintains a selection of EDA CAD vendor plugins, and can distribute them with approval from the relevant vendors. If you are a university or company with licensed access to EDA CAD tools, please contact us at <a href="mailto:hammer-plugins-access@lists.berkeley.edu">hammer-plugins-access@lists.berkeley.edu</a> to request access to the plugins.</p>
+<p>We are also working on an OpenROAD plugin.</p>
+<h2>Technology PDK Plugins</h2>
+<p>Hammer supports NanGate45 and the <a href="http://asap.asu.edu/asap/">ASAP7</a> PDK out of the box.</p>
+<p>Unfortunately, UC Berkeley is not able to distribute any proprietary technology plugins under its current licensing/legal arrangement.</p>
+<h2>Chipyard</h2>
+<p>Hammer is also an integral component of the <a href="https://github.com/ucb-bar/chipyard">Chipyard framework</a> from <a href="http://bar.eecs.berkeley.edu/">UC Berkeley Architecture Research</a>.
+Useful documentation for how an example block is pushed through the VLSI flow with Hammer in the free ASAP7 PDK in Chipyard is at <a href="https://chipyard.readthedocs.io/en/latest/VLSI">https://chipyard.readthedocs.io/en/latest/VLSI</a>.</p>
+<h1>Acknowledgements</h1>
+<p>If you use Hammer in your work, please cite the following paper:</p>
+<p>Edward Wang, Colin Schmidt, Adam Izraelevitz, John Wright, Borivoje Nikolić, Elad Alon, Jonathan Bachrach. “<a href="http://eecs.berkeley.edu/~edwardw/pubs/hammer-isqed-2020.pdf">A Methodology for Reusable Physical Design</a>”. In proceedings of the 21st International Symposium on Quality Electronic Design (ISQED 2020), Santa Clara, USA, March 2020.</p>
+	</div>
+</article>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container has-text-centered">
+				<div class="columns">
+					<div class="column">
+						<style>
+.footertext, .footertext > * {
+	color: #BFBFBF;
+}
+.footertext > a {
+	text-decoration: underline;
+}
+						</style>
+							<p class="footertext">All rights reserved © Hammer developers. Powered by <a href="https://getpelican.com" rel="nofollow">Pelican</a> &amp; <a href="https://github.com/ivanhercaz/buruma">Buruma</a>.</p>
+					</div>
+<!--
+					<div class="column">
+							<p>All rights reserved © Hammer developers</p>
+				    </div>
+-->
+			</div>
+		</footer>
+	</body>
+</html>

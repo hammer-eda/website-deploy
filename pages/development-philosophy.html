@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE-edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta name="author" content="Hammer developers" />
+		<title>Development Philosophy  - Hammer
+</title>
+		<link rel="stylesheet" type="text/css" href="../theme/css/style.min.css">
+		<link rel="stylesheet" type="text/css" href="../theme/font-awesome-4.7.0/css/font-awesome.min.css">
+		<script src="../theme/js/menu.js"></script>
+		<!-- Pending to improve -->
+	</head>
+	<body>
+		<nav class="navbar is-info" role="navigation" aria-label="main navigation">
+				<div class="navbar-brand">
+						<!-- Empty -->
+					<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+					</a>
+				</div>
+				<div id="navbarMain" class="navbar-menu">
+					<div class="navbar-start">
+					    <a class="navbar-item" href=".././">
+							About Hammer
+						</a>
+					    <a class="navbar-item" href=".././pages/publications.html">
+							Publications
+						</a>
+					    <a class="navbar-item" href=".././pages/team.html">
+							Team
+						</a>
+					    <a class="navbar-item" href=".././pages/development-philosophy.html">
+							Dev Philosophy
+						</a>
+						<a class="navbar-item" href="https://docs.hammer-eda.org/">
+							Docs
+						</a>
+						<a class="navbar-item" href="https://github.com/hammer-eda">
+							GitHub
+						</a>
+						<a class="navbar-item" href="https://twitter.com/hammer_eda">
+							Twitter
+						</a>
+					    <a class="navbar-item" href=".././pages/user-forum.html">
+							User Forum
+						</a>
+						<div class="navbar-item has-dropdown is-hoverable">
+							<a class="navbar-link" href="/categories">
+Categories							</a>
+							<div class="navbar-dropdown">
+								<a class="navbar-item" href="/category/news.html">
+									News
+								</a>
+							</div>
+						</div>
+				</div>
+				<div class="navbar-end">
+					<div class="navbar-item">
+						<div class="buttons">
+						</div>
+					</div>
+				</div>
+			</div>
+			</nav>
+		<section class="section">
+			<div class="container">
+<article class="message is-info">
+	<div class="message-header">
+		Development Philosophy
+	</div>
+	<div class="message-body has-text-dark">
+		<h1>Philosophy</h1>
+<p>Hammer's design is centred around three major ideas:</p>
+<ol>
+<li><strong>Incremental adoption.</strong> The main goal of our users is chip implementation, with tool development as a secondary focus. Therefore, our solution should make it easy to leverage existing, re-usable features that accelerate chip implementation while still allowing creation of non-reusable solutions as needed to complete specific tasks.</li>
+<li><strong>System evolution.</strong> Non-reusable solutions do not directly lead to re-usable features. We therefore prioritize tool developers, who serve a key role in generalizing non-reusable solutions for future users. For them, tool development is the main goal with chip implementation as a secondary focus.</li>
+<li><strong>Modularity and abstraction.</strong> Realizing the two above goals requires a mechanism and method. Therefore, we leverage the powerful concepts of modularity and abstraction from the software world in order to organize aspects of the EDA flow and enable re-usability.</li>
+</ol>
+<h1>Feature Planning</h1>
+<p>Modern CAD tools can be very complex to use and operate, and we want to be especially careful that Hammer maintains the correct modular abstractions to manage this complexity.
+To ensure generalizability of Hammer flows, we consult the following guidelines/framework.
+Note that it is mainly advisory as opposed to being strictly enforced. These are still draft guidelines and subject to change as the project evolves.</p>
+<ul>
+<li>A feature is generalizable in a meaningful/useful way when there are enough common features between them to allow re-usable code. For example, CPF is a generalizable API because the ideas and concepts between different flows are substantially similar. On the other hand, for example, in certain CAD tools, well tap APIs are hard to generalize meaningfully because they consist of random collections of TCL.</li>
+<li>APIs will likely be more readily implemented if</li>
+<li>1) A Hammer core developer has access to a second technology or CAD tool where that API is used</li>
+<li>2) A Hammer core developer has a pressing need for using this API in a tapeout; it is a reasonable candidate for generalization; and it can be implemented in a reasonably clean way.</li>
+<li>What constitutes a reasonable candidate for generalization?</li>
+<li>1) If a feature is present in two or more CAD tools and is generalizable in a meaningful/useful way, consider making it a generalizable Hammer API.</li>
+<li>2) If a feature is present in multiple technology nodes/PDKs and is generalizable in a meaningful/useful way, consider making it a generalizable Hammer API.</li>
+<li>3) If a feature is very useful but it is unclear how to generalize it in a useful way, then that tapeout project should consider using a TCL hook.</li>
+<li>TCL hooks can belong to Hammer technology libraries or combinations of Hammer tool and technology libraries (e.g. 28nm with FooBar vendor).</li>
+</ul>
+	</div>
+</article>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container has-text-centered">
+				<div class="columns">
+					<div class="column">
+						<style>
+.footertext, .footertext > * {
+	color: #BFBFBF;
+}
+.footertext > a {
+	text-decoration: underline;
+}
+						</style>
+							<p class="footertext">All rights reserved © Hammer developers. Powered by <a href="https://getpelican.com" rel="nofollow">Pelican</a> &amp; <a href="https://github.com/ivanhercaz/buruma">Buruma</a>.</p>
+					</div>
+<!--
+					<div class="column">
+							<p>All rights reserved © Hammer developers</p>
+				    </div>
+-->
+			</div>
+		</footer>
+	</body>
+</html>
